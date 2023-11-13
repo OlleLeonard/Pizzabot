@@ -1,0 +1,391 @@
+body {
+    background-image:url(bilder/pngtree-pizza-cartoon-simple-background-picture-image_1283033.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+}
+
+#greenButt {
+  width: 110px;
+  height: 90px;
+  border-radius: 50px;
+  margin-left: 46%;
+  border-style: solid;
+  border-color: green;
+  border-width: 10px;
+  position: absolute;
+  background-color: chartreuse;
+  display: none;
+  cursor: grab;
+  box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#greenButt:hover {
+  box-shadow: 0 0 20px 10px rgba(0, 255, 0, 0.8);
+}
+
+#pizzaFinished {
+  width: 110px;
+  height: 90px;
+  margin-bottom:50px ;
+  margin-right: 30px;
+  position: absolute;
+  display: none;
+}
+
+#pizzaFinished1 {
+  width: 110px;
+  height: 90px;
+  margin-bottom:50px ;
+  margin-right: 30px;
+  position: absolute;
+  display: none;
+}
+
+#pizzaFinished2 {
+  width: 110px;
+  height: 90px;
+  margin-bottom:50px ;
+  margin-right: 30px;
+  position: absolute;
+  display: none;
+}
+
+#pizzaFinished3 {
+  width: 110px;
+  height: 90px;
+  margin-bottom:50px ;
+  margin-right: 30px;
+  position: absolute;
+  display: none;
+}
+
+.robot{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+
+.eyes {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:row;
+    position: absolute;
+}
+
+.eye1 {
+    margin-left: 100px;
+    animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+.eye2 {
+    margin-left: 200px;
+    animation: rotation2 5s infinite linear;
+}
+
+@keyframes rotation2 {
+    from {
+      transform: rotate(359deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
+
+.startScreen {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    margin-top: 195px;
+    width: 650px;
+    height: 460px;
+    background-color: white;
+    position: absolute;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 50px;
+    border-width: 25px;
+}
+
+.startScreenInside {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  margin-bottom: 150px;
+}
+
+button {
+  background-color: #4d4d4d;
+  color: white;
+  width: 160px;
+  height: 100px;
+  font-size: 25px;
+  cursor: grab;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover{
+  background-color: blue;
+  color: greenyellow;
+}
+
+.face {
+    margin-bottom: 445px;
+    width: 550px;
+    height: 70px;
+    background-color: white;
+    position: absolute;
+    border-style: solid;
+    border-color: gray;
+    border-width: 30px;
+    background-color: gray;
+}
+
+
+  #nameScreen {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:row;
+    margin-top: 195px;
+    width: 650px;
+    height: 460px;
+    background-color: white;
+    position: absolute;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 50px;
+    border-width: 25px;
+    display: none;
+  }
+
+.nameScreenCenter {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.name {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  margin-top: 60px;
+}
+
+input{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:row;
+    width: 100px;
+    height: 30px;
+    background-color:orange;
+    border-radius: 10px;
+}
+
+#helloScreen {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:row;
+  margin-top: 195px;
+  width: 650px;
+  height: 460px;
+  background-color: white;
+  position: absolute;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 50px;
+  border-width: 25px;
+  display: none;
+}
+
+.nameButt {
+margin-top: 20px;
+padding: 10px;
+}
+
+.helloScreenInside {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+}
+
+.helloScreenCenter {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:row;
+}
+
+#pizzaScreen {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:row;
+  margin-top: 195px;
+  width: 650px;
+  height: 460px;
+  background-color: white;
+  position: absolute;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 50px;
+  border-width: 25px;
+  display: none;
+}
+
+.pizzaScreenCenter {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+}
+
+.pizzaPicBox {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:row;
+}
+
+#SelectScreen {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:row;
+  margin-top: 195px;
+  width: 650px;
+  height: 460px;
+  background-color: white;
+  position: absolute;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 50px;
+  border-width: 25px;
+  display: none;
+}
+
+.SelectScreenInside {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+}
+
+select{
+  margin-left: 30%;
+}
+
+.many{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+}
+
+.quantityButt {
+  margin-top: 20px;
+}
+
+#timeScreen {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:row;
+  margin-top: 195px;
+  width: 650px;
+  height: 460px;
+  background-color: white;
+  position: absolute;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 50px;
+  border-width: 25px;
+  display: none;
+}
+
+.timeScreenInside {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+}
+
+.timeScreenCenter {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+}
+
+#greateScreen {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:row;
+  margin-top: 195px;
+  width: 650px;
+  height: 460px;
+  background-color: white;
+  position: absolute;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 50px;
+  border-width: 25px;
+  display: none;
+}
+
+.greateScreenInside {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+}
+
+.greateButt {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+}
+
+
+.pizzaFinishedPic {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  animation: rotation2 5s infinite linear;
+  width: 450px;
+  height: 450px;
+  margin-top: -100px;
+}
+
+.greenButtText {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  color: white;
+  margin-top: 30px;
+}
+

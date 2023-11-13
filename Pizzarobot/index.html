@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Roboti</title>
+    <script src="https://kit.fontawesome.com/30a5af1934.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div>
+        <div onclick="myFunction10()" id="greenButt" value="Show Pizza">
+            <p class="greenButtText">Get your Pizza!</p>
+        </div>
+        <div class="robot">
+            <img src="bilder/robot.png" alt="Forest" width="1240" height="910">
+            <div class="face">
+                <div class="eyes">
+                    <div>
+                    <img class="eye1" src="bilder/wotgr.png" alt="Forest" width="100" height="100">
+                    </div>
+                    <div>
+                    <img class="eye2" src="bilder/wotgr.png" alt="Forest" width="100" height="100">
+                    </div>
+                </div>        
+            </div>
+         <div class="startScreen">
+            <div class="startScreenInside">
+            <h1>Hello!</h1>
+            <h2>I am Pizzabot0.1.</h2>
+            <h2>May i take your order?</h2>
+            <button  onclick="myFunction()">Yes place order</button>
+            </div>
+         </div>    
+            <div id="nameScreen">
+                <h1 class="nameScreenCenter">Write your name</h1>
+                <div class="name" name="myForm">
+                    <label for="firstname">First name</label>
+                    <input id="myText" name="firstname" type="text" placeholder="Name" value=""/>
+                </div>
+                <div class="name" name="myForm">
+                    <label for="lastname">Last name</label>
+                    <input id="myText1" name="lastname" type="text" placeholder="Surname" value=""/>
+                    <button class="nameButt" onclick="myFunction2(), myFunction3(), myFunction4()">Press</button>
+                </div>    
+            </div>        
+                    <div id="helloScreen">
+                        <div class="helloScreenInside">
+                            <h1>Hello</h1>
+                            <div class="helloScreenCenter">
+                                <p id="firstname"></p>
+                                <p id="lastname"></p>
+                            </div>
+                             <button  onclick="myFunction5()">Initiate Order</button>
+                        </div>
+                    </div>
+                    <div id="pizzaScreen">
+                        <div class="pizzaScreenCenter">
+                            <p id="3pizza"></p>
+                            <p id="31pizza"></p>
+                            <p id="32pizza"></p>
+                            <p id="33pizza"></p>
+                            <div class="pizzaPicBox">
+                                <img class="pizzaPic" src="bilder/veggie2.png" alt="Vegg" width="100" height="100">
+                                <img class="pizzaPic" src="bilder/hawaii2.png" alt="Hawaii" width="100" height="100">
+                                <img class="pizzaPic" src="bilder/peppperoni3.png" alt="Pepperoni" width="100" height="100">
+                            </div>
+                            <button  onclick="myFunction6()">Submit Request</button>
+                        </div>
+                    </div>
+                    <div id="SelectScreen">
+                        <div class="SelectScreenInside">
+                            <h1>Choose your pizza in the meny</h1>
+                            <div class="SelectScreenCenter">
+                                <form id="pizzaOrderForm">
+                                    <select id="pizzaType" required>
+                                      <option type="radio" name="pizza" value="Vegetarian">Vegetarian Pizza</option>
+                                      <option type="radio" name="pizza" value="Hawaiian">Hawaiian Pizza</option>
+                                      <option type="radio" name="pizza" value="Pepperoni">Pepperoni Pizza</option>
+                                    </select>
+                                    <h2>How many pizzas do you want?</h2>
+                                    <div class="many">
+                                      <label for="quantity">Quantity:</label>
+                                      <input type="number" id="quantity" min="1" value="1" required>
+                                    </div>  
+                            </div>     
+                                <button class="quantityButt" type="submit" onclick="myFunction7()">Time to order Pizza</button>
+                        </div>
+                    </div>              
+                    <div id="timeScreen">
+                        <div class="timeScreenInside">
+                            <h1>Perfect</h1>
+                            <div class="timeScreenCenter">
+                                <div id="response1"></div>
+                                <button  onclick="myFunction8()">Confirm Order</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="greateScreen">
+                        <div class="greateScreenInside">
+                            <h1>Greate!</h1>
+                            <div class="greateScreenCenter">
+                                <div id="pizzaFinished">
+                                    <img class="pizzaFinishedPic" src="bilder/veggie2.png" alt="Veggie Pizza">
+                                </div>
+                                <div id="pizzaFinished2">
+                                    <img class="pizzaFinishedPic" src="bilder/hawaii2.png" alt="Hawaiian Pizza">
+                                </div>
+                                <div id="pizzaFinished3">
+                                    <img class="pizzaFinishedPic" src="bilder/peppperoni3.png" alt="Pepperoni Pizza">
+                                </div>
+                                <div id="response2"></div>
+                                <div class="greateButt">
+                                <button id="greatestButt" onclick="myFunction9(), myFunction11()">Start Processing</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>    
+    </div>
+<script src="script.js">
+</script>
+</body>
+</html>
